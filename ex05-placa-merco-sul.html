@@ -4,30 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 05 - Placas mercosul </title>
+    <title>Exercicio 05 - Placa mercosul </title>
     <script>
-        /* Recentemente, as placas de automóveis no Brasil passaram a usar 
-        o chamado "modelo Mercosul".           
-          Nesse modelo, o segundo dígito numérico do modelo anterior passou            
-          a ser representado por uma letra. A conversão é regida pela tabela:           
-           Dígito         Letra          
-              0              A         
-              1              B        
-              2              C         
-              3              D        
-              4              E            
-              5              F
-              6              G
-              7              H
-              8              I
-              9              J
-        Assim, uma placa tradicional ABC-1234, no formato do padrão Mercosul, ficaria ABC-1C34.
-        Peça para o usuário informar um dígito válido entre 0 a 9. Com o loop do..while, faça a validação,
-         repetindo a solicitação até que a resposta obtida seja válida.
-          Em seguida, usando a estrutura de decisão switch..case, informe ao usuário    
-          a letra correspondente ao dígito informado.        */
-             
-          let num = Number(prompt('Informe o segundo dígito numérico da placa antiga :'))
+        /* 
+        Recentemente, as placas de automóveis no Brasil passaram a usar  o chamado "modelo Mercosul".           
+         Nesse modelo, o segundo dígito numérico do modelo anterior passou a ser representado por uma letra. A conversão é regida pela tabela: 
+
+          Dígito         Letra              
+           0              A              
+           1              B              
+           2              C              
+           3              D              
+           4              E              
+           5              F              
+           6              G              
+           7              H              
+           8              I             
+           9              J           
+         Assim, uma placa tradicional ABC-1234, no formato do padrão Mercosul,ficaria ABC-1C34.          
+        Peça para o usuário informar um dígito válido entre 0 a 9. Com o loop  do..while, faça a validação, repetindo a solicitação até que a resposta  obtida seja válida.                       
+         Em seguida, usando a estrutura de decisão switch..case, informe ao usuário a letra correspondente ao dígito informado.
+        */
+        
+        //1- usar o do while para criar oum loop que continue funcionando mesmo com a inserção de informações incorretas 
+
+        let num , letra
+        // loop ate a innformação inserida se correta 
+        do 
+        {
+            num = Number(prompt('Informe o segundo digíto numério da sua placa : '))
+        }
+        while(isNaN(num) >= 0 || num <= 9 )    
+            alert('O numero digitado não é valido.')
+
+            ifelse
+            {
+            switch(num)
+             {
+                case '0':
+                    document.write(num = 'A')
+                case '1':
+                    document.write(num = 'B')
+                case '2':
+                    document.write(num = 'C')
+                case '3':
+                    document.write(num = 'D')
+                case '4':
+                    document.write(num = 'E')
+                case '5':
+                    document.write(num = 'F')
+                case '6':
+                    document.write(num = 'G')
+                case '7':
+                    document.write(num = 'H')
+                case '8':
+                    document.write(num = 'I')
+                case '9':
+                    document.write(num = 'J')
+                default : // "else do switch"
+                    alert('Erro inforção invalida !!')
+             }
+            }
+                
+        
+
 
 
     </script>
