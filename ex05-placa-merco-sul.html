@@ -27,45 +27,65 @@
           Em seguida, usando a estrutura de decisão switch..case, informe ao usuário    
           a letra correspondente ao dígito informado.        */
              
-          let num 
+          let num , letra
         // loop ate a innformação inserida se correta 
         do 
         {
             num = parseInt(prompt('Informe o segundo digíto numério da sua placa : '))
         }
-        while(isNaN(num) >= 0 <= 9 )    
-            alert('O numero digitado não é valido.')
-        if(num)
-        {
+        while(isNaN(num)|| num <0 || num > 9)
+        //codigo while(isNaN(num) >= 0 <= 9 )    
+            //alert('O numero digitado não é valido.')
+       // if(num)
+        //{ não precisa do if para criar o case 
             switch(num)
             {
                 case '0':
-                    alert('O numero será substituido por A')
+                    letra ='A'
+                    break
+                    //alert('O numero será substituido por A')
                     //document.write(num = 'A')
                 case '1':
+                letra ='B'
                     //document.write(num = 'B')
                 case '2':
+                letra ='C'
+                    break
                     //document.write(num = 'C')
                 case '3':
+                letra ='D'
+                    break
                     //document.write(num = 'D')
                 case '4':
+                letra ='E'
+                    break
                     //document.write(num = 'E')
                 case '5':
+                letra ='F'
+                    break
                     //document.write(num = 'F')
                 case '6':
+                letra ='G'
+                    break
                     //document.write(num = 'G')
                 case '7':
+                letra ='H'
+                    break
                     //document.write(num = 'H')
                 case '8':
+                letra ='I'
+                    break
                     //document.write(num = 'I')
-                case '9':
+                //case '9':
                     //document.write(num = 'J')
                 default : // "else do switch"
-                    alert('Erro inforção invalida !!')    
+                letra ='J'
+                    break
+                    //alert('Erro inforção invalida !!')    
             }
-
+            alert(`A letra corresponde ao digito ${num} é ${letra}`) 
                 
-        }
+        //}
 
 
 
